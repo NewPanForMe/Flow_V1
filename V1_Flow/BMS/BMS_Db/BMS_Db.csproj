@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="BLL\Sys\Role\" />
+    <Folder Include="BLL\Sys\Sms\" />
+    <Folder Include="BLL\Sys\File\" />
+    <Folder Include="EfContext\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BMS_SMS" Version="1.0.2" />
+    <PackageReference Include="Ys.Tools" Version="1.1.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BMS_Base\BMS_Base.csproj" />
+    <ProjectReference Include="..\BMS_Models\BMS_Models.csproj" />
+  </ItemGroup>
+
+</Project>

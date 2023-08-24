@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.n-card {
+    max-width: 300px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-size: 14px;
+}
+.login {
+    width: 100%;
+    height: 100vh;
+}
+/* 登录主题 */
+ .login .login-content {
+    width: 350px;
+    height: 28%;
+    background-color: rgb(255, 243, 243);
+    box-shadow: 5px 5px 150px 0px rgb(97, 94, 94);
+    border-radius: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:  5vh 5vh 5px 5vh;
+}
+/* 登录按钮 */
+.login .login-button{
+    padding:  5px 5vh 10px 5vh;
+}
+/* 登录主题文字 */
+.login .login-text{
+    padding: 0px 0px 30px 0px;
+    font-size: 30px;
+    text-align: center;
+}
+/* 登录主体更多 */
+.login .login-more{
+    text-align: center;
+}
+/* 登录主体更多按钮字体颜色 */
+.login .login-more .t-button__text{
+   color: #8876eb;
+}
+
+
+
+
+/* 菜单栏 */
+.layout .t-layout__sider{
+    height: 100vh;
+}
+/* 底部 */
+.layout .t-layout__footer{
+    background-color: rgb(233, 228, 228);
+    height: 1vh;
+    padding: 15px 15px 20px 15px
+}
+/* 主体内容 */
+.layout  .layout-content{
+    margin: 10px;
+    background-color: white;
+    color: #000;
+    /*     height: 82vh; */
+    height: 86vh;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* .layout   .layout-content-top{
+    height: 3vh;
+    background-color: rgb(221, 217, 217);
+    padding: 5px 4px 0px 8px;
+} */
+/* 列表页新增按钮行 */
+.layout  .layout-content .content-top{
+    background-color: white;
+    padding: 0px 0px 10px 0px;
+    height: 3vh;
+}
+/* 头部 */
+.layout .t-layout__header .header{
+    background-color: #b1acac;
+    height: 56px;
+} 
+/* header */
+.layout .t-layout__header .header .header-left{
+    float: right;
+} 
+/* 退出按钮部分 */
+.layout .t-layout__header .header .header-left .header-left-logout{
+    padding: 11px 10px 0px 0px;
+} 
+/* 新增页 */
+.layout  .layout-content .add{
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    width: 60%;
+}
