@@ -15,8 +15,4 @@
     <PackageReference Include="Ys.Tools" Version="1.1.21" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="MiddleWare\" />
-  </ItemGroup>
-
 </Project>

@@ -191,7 +191,7 @@ public class Startup
         service.Configure<DbConfig>(_configuration.GetSection("DbConfig"));
         _configuration.Bind("DbConfig", DbConfig.Instance);
         //已经注入，可以直接使用
-        service.AddDbContext<BmsV1DbContext>(opt =>
+        service.AddDbContext<FlowV1DbContext>(opt =>
         {
             opt.UseSqlServer(DbConfig.Instance.SqlServer);
         });
