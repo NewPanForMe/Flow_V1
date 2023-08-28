@@ -1,4 +1,4 @@
-﻿namespace BMS_Db.EfContext  ;
+﻿namespace Flow_Db.EfContext;
 using Microsoft.EntityFrameworkCore;
 public class FlowV1DbContext : DbContext
 {

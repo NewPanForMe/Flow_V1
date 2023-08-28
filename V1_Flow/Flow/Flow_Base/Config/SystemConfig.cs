@@ -1,6 +1,6 @@
 ﻿using Ys.Tools.Config;
 
-namespace BMS_Base.Config;
+namespace Flow_Base.Config;
 
 public record SystemConfig
 {

@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BMS_SMS" Version="1.0.2" />
     <PackageReference Include="Consul" Version="1.6.10.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.9" />

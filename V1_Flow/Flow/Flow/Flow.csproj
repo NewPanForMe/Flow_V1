@@ -17,17 +17,18 @@
     <PackageReference Include="Consul" Version="1.6.10.9" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.19" />
     <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="7.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
     <PackageReference Include="NLog.Database" Version="5.2.1" />
     <PackageReference Include="NLog.Extensions.Logging" Version="5.3.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Ys.Tools" Version="1.1.21" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\BMS_Base\BMS_Base.csproj" />
-    <ProjectReference Include="..\BMS_Db\BMS_Db.csproj" />
-    <ProjectReference Include="..\BMS_Models\BMS_Models.csproj" />
+    <ProjectReference Include="..\Flow_Base\Flow_Base.csproj" />
+    <ProjectReference Include="..\Flow_Db\Flow_Db.csproj" />
+    <ProjectReference Include="..\Flow_Models\Flow_Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,17 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BLL\" />
+    <Compile Remove="BLL\**" />
+    <EmbeddedResource Remove="BLL\**" />
+    <None Remove="BLL\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BMS_SMS" Version="1.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Ys.Tools" Version="1.1.21" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BMS_Base\BMS_Base.csproj" />
-    <ProjectReference Include="..\BMS_Models\BMS_Models.csproj" />
   </ItemGroup>
 
 </Project>

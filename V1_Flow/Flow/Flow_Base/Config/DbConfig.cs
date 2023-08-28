@@ -1,4 +1,4 @@
-﻿namespace BMS_Base.Config;
+﻿namespace Flow_Base.Config;
 
 public record DbConfig
 {

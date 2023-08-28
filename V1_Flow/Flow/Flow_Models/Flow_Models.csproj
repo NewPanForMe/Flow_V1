@@ -7,14 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="DbModels\**" />
+    <Compile Remove="Enum\**" />
     <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="DbModels\**" />
+    <EmbeddedResource Remove="Enum\**" />
     <EmbeddedResource Remove="Models\**" />
+    <None Remove="DbModels\**" />
+    <None Remove="Enum\**" />
     <None Remove="Models\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DbModels\" />
-    <Folder Include="Enum\" />
   </ItemGroup>
 
   <ItemGroup>

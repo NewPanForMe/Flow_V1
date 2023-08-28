@@ -1,19 +1,17 @@
 ﻿using System.Reflection;
 using System.Text;
-using BMS_Base.Config;
-using BMS_Db.EfContext;
 using Consul;
+using Flow_Base.Config;
+using Flow_Db.EfContext;
 using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
 using Ys.Tools.MiddleWare;
 using Ys.Tools.Config;
 using Ys.Tools.Interface;
-using BMS_SMS.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.IdentityModel.Tokens;
-
-namespace BMS;
+namespace Flow;
 
 public class Startup
 {
@@ -83,8 +81,6 @@ public class Startup
         RegisterToken(services);
         //获取SystemConfig
         RegisterSystem(services);
-        //获取SmsBaseConfig
-        RegisterSms(services);
 
 
 
@@ -240,13 +236,5 @@ public class Startup
         _configuration.Bind("SystemConfig", SystemConfig.Instance);
 
     }
-    /// <summary>
-    /// 注入SMS
-    /// </summary>
-    /// <param name="service"></param>
-    private void RegisterSms(IServiceCollection service)
-    {
-        service.Configure<SmsBaseConfig>(_configuration.GetSection("SmsBaseConfig"));
-        _configuration.Bind("SmsBaseConfig", SmsBaseConfig.Instance);
-    }
+
 }
